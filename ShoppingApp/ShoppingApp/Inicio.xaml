@@ -77,11 +77,11 @@
 
         <Image Grid.ColumnSpan="3" Grid.Row="3" Source="https://bolsadetrabajo.laborum.pe/saga/data1/images/slider_2.jpg" />
 
-        <StackLayout Grid.ColumnSpan="3" Grid.Row="4" Orientation="Horizontal" BackgroundColor="GreenYellow" >
+        <StackLayout Grid.ColumnSpan="3" Grid.Row="5" Orientation="Horizontal" BackgroundColor="GreenYellow" >
             <Image Source="https://popmenucloud.com/nkdwlziy/3d1ff84e-2772-4fa3-8aaf-908915790e5d.png"  HorizontalOptions="Start"/>
             <Label Text="Derechos Reservados" FontSize="18"  HorizontalOptions="Center" TextColor="White" VerticalOptions="Center" />
         </StackLayout>
-        <Label  Grid.ColumnSpan="3" Grid.Row="6" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"   />
+        <Label  Grid.ColumnSpan="3" Grid.Row="6" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"  />
 
     </Grid>
 </ContentPage>

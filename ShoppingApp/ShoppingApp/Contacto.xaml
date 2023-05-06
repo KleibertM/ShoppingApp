@@ -34,6 +34,6 @@
         <Entry Grid.ColumnSpan="3" Grid.Row="4" x:Name="descrip"  Placeholder="Descripcion" TextColor="Black"  PlaceholderColor="Gray" />
 
         <Button x:Name="btnContact" Text="Enviar" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="40" BackgroundColor="GreenYellow" />
-
+        <Label  Grid.ColumnSpan="3" Grid.Row="10" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"  />
     </Grid>
 </ContentPage>

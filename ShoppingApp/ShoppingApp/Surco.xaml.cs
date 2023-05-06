@@ -9,14 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace ShoppingApp
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Mapa : ContentPage
-    {
-        public Mapa()
-        {
-            InitializeComponent();
-        }
-
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Surco : ContentPage
+	{
+		public Surco ()
+		{
+			InitializeComponent ();
+		}
         private async void btnSur_Clicked(object sender, EventArgs e)
         {
             App.MasterDet.IsPresented = false;

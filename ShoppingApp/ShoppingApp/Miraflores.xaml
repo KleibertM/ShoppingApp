@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ShoppingApp.Mapa">
+             x:Class="ShoppingApp.Miraflores"
+             Title="Sede Miraflores">
     <Grid Padding="10,10,10,0" BackgroundColor="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="40" />
             <RowDefinition Height="190"/>
-            <RowDefinition Height="80"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="80"/>
             <RowDefinition Height="220" />
             <RowDefinition Height="*" />
@@ -21,15 +22,17 @@
         <Button Grid.Row="0" Grid.Column="1" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" />
         <Button Grid.Row="0" Grid.Column="2" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black"/>
 
-        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://tec.com.pe/wp-content/uploads/2013/11/Google-Maps-Trafico-Lima.jpg" />
-        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Visítanos en nuestras sedes de Surco, Miraflores y Ate para disfrutar de una experiencia de compra única, variedad de productos y un excelente" FontSize="16" TextColor="Black" />
+
+        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://photos.wikimapia.org/p/00/02/05/79/52_big.jpg" />
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text=" En el Distrito de Miraflores, Banco Falabella se encuentra en Av. José Pardo 130, Miraflores 15074,
+               el horario de atención es de Lunes A Viernes 10:00 A 18:00, Sábado 10:00 A 13:00, Domingo Cerrado y el teléfono de contacto es el 0116154300
+               " FontSize="16" TextColor="Black" />
 
         <Label Grid.Row="3" Grid.ColumnSpan="3" Text="Sedes" FontSize="26" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" />
 
         <ScrollView Grid.Row="4" Grid.ColumnSpan="3">
             <Grid BackgroundColor="LightGray" Padding="0,5,0,5">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="190" />
                     <RowDefinition Height="190" />
                     <RowDefinition Height="190" />
                 </Grid.RowDefinitions>
@@ -43,8 +46,6 @@
                 <ImageButton Grid.ColumnSpan="3" Grid.Row="1" Source="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/saga-falabella.jpeg" BackgroundColor="Transparent"/>
                 <Button Grid.ColumnSpan="3" Grid.Row="1" Text="Ate" FontSize="20" Clicked="btnAte_Clicked" HorizontalOptions="Center" CornerRadius="50" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGreen" Opacity=".8" VerticalOptions="Center"/>
 
-                <ImageButton Grid.ColumnSpan="3" Grid.Row="2" Source="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/FALABELLA-puruc-1.jpeg" BackgroundColor="Transparent"/>
-                <Button Grid.ColumnSpan="3" Grid.Row="2" Text="Miraflores"  FontSize="20" Clicked="btnMirf_Clicked" HorizontalOptions="Center" CornerRadius="50" TextColor="Black" FontAttributes="Bold" BackgroundColor="LightGreen" Opacity=".8" VerticalOptions="Center"/>
             </Grid>
         </ScrollView>
         <Label  Grid.ColumnSpan="3" Grid.Row="6" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"  />

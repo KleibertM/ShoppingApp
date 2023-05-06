@@ -33,7 +33,7 @@
         
         <Label Grid.Row="4" Grid.ColumnSpan="3" Text="Saga Falabella tiene una estructura de trabajo organizada y colaborativa, donde cada miembro del equipo desempeña un rol clave en la operación diaria. Se fomenta la comunicación, la innovación y la atención al cliente, asegurando la calidad y satisfacción en todas las áreas de la empresa."
                FontSize="14" TextColor="Black" />
-
+        <Label  Grid.ColumnSpan="3" Grid.Row="6" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"  />
 
     </Grid>
 </ContentPage>

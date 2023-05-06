@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Personal"
+             Title="Personal">
+    
+    <Grid Padding="10,10,10,0" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Text="Historia" x:Name="btnHist" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnHist_Clicked" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Personal" x:Name="btnPerso" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnPerso_Clicked"/>
+        <Button Grid.Row="0" Grid.Column="2" Text="Sistema" x:Name="btnSist" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnSist_Clicked"/>
+
+        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/1649173715672-scaled.jpg"/>
+
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Saga Falabella tiene una estructura de trabajo organizada y colaborativa, donde cada miembro del equipo desempeña un rol clave en la operación diaria. Se fomenta la comunicación, la innovación y la atención al cliente, asegurando la calidad y satisfacción en todas las áreas de la empresa."
+               FontSize="14" TextColor="Black" />
+
+        <Image Grid.Row="3" Grid.ColumnSpan="3" Source="https://s3.us-east-1.amazonaws.com/media.greatplacetowork.com/peru/best-workplaces-in-peru/2019/saga-falabella/page-1.jpg"/>
+
+        <Label Grid.Row="4" Grid.ColumnSpan="3" Text="Saga Falabella tiene una estructura de trabajo organizada y colaborativa, donde cada miembro del equipo desempeña un rol clave en la operación diaria. Se fomenta la comunicación, la innovación y la atención al cliente, asegurando la calidad y satisfacción en todas las áreas de la empresa."
+               FontSize="14" TextColor="Black" />
+
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Historia"
+             Title="Historia">
+    
+    <Grid Padding="10,10,10,0" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="140" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Text="Historia" x:Name="btnHist" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnHist_Clicked" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Personal" x:Name="btnPerso" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnPerso_Clicked"/>
+        <Button Grid.Row="0" Grid.Column="2" Text="Sistema" x:Name="btnSist" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" Clicked="btnSist_Clicked"/>
+
+        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://www.peru-retail.com/wp-content/uploads/800px-Fallabela_inicios_siglo_XX-1.jpg" />
+
+        <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Saga Falabella es una reconocida cadena de tiendas por departamentos que se originó en Perú en 1952.
+               Fue fundada por Salvatore Falabella, un inmigrante italiano. En sus inicios, comenzó como una pequeña sastrería en la ciudad de Tacna, pero con el tiempo se expandió y se convirtió en una cadena de tiendas exitosa."
+               FontSize="14" TextColor="Black" />
+
+        <Label Grid.Row="3" Grid.ColumnSpan="3" Text="Fundadores" FontSize="26" FontAttributes="Italic"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" />
+
+        <ImageButton Grid.Column="0" Grid.Row="4" Source="https://upload.wikimedia.org/wikipedia/commons/b/b9/Reinaldo_Solari.jpg" BackgroundColor="Transparent" CornerRadius="100"/>
+        <Label Grid.Column="0" Grid.Row="5" Text="Reinaldo Solari" FontSize="16"  HorizontalOptions="Center" TextColor="Black"/>
+
+        <ImageButton Grid.Column="1" Grid.Row="4" Source="https://s22.q4cdn.com/351912490/files/images/history/1937-alberto-solari.jpg" BackgroundColor="Transparent" CornerRadius="100"/>
+        <Label Grid.Column="1" Grid.Row="5" Text="Alberto Solari" FontSize="16"  HorizontalOptions="Center" TextColor="Black"/>
+
+        <ImageButton Grid.Column="2" Grid.Row="4" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRkcqBo_Wh-OQ8OCGnf4ExZkw6bKMWpirQbmZTF81R-PWtmfHy9rtSqIMiFlAId_eQyI" BackgroundColor="Transparent" CornerRadius="100"/>
+        <Label Grid.Column="2" Grid.Row="5" Text="Alex Z. Franco" FontSize="16"  HorizontalOptions="Center" TextColor="Black"/>
+
+    </Grid>
+</ContentPage>

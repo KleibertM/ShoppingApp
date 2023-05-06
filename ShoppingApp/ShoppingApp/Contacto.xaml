@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Contacto"
+             Title="Contactanos">
+    <Grid BackgroundColor="White" Padding="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.33*" />
+            <ColumnDefinition Width="0.33*" />
+            <ColumnDefinition Width="0.33*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="3" Text="Atencion de Consultas o Incidencias" HorizontalOptions="Center" FontSize="18" TextColor="Black" VerticalOptions="Center"/>
+        <Entry Grid.Column="0" Grid.Row="1" x:Name="Nombre"  Placeholder="Nombre" TextColor="Black"  PlaceholderColor="Gray"/>
+        <Entry Grid.Column="1" Grid.Row="1" x:Name="Ape"  Placeholder="Apellido" TextColor="Black"  PlaceholderColor="Gray"/>
+        <Entry Grid.Column="2" Grid.Row="1" x:Name="dni"  Placeholder="DNI" TextColor="Black"  PlaceholderColor="Gray" Keyboard="Numeric"/>
+
+
+        <Entry Grid.Column="0" Grid.Row="2" x:Name="tel"  Placeholder="Telefono" TextColor="Black"  PlaceholderColor="Gray" Keyboard="Telephone"/>
+        <Entry Grid.Column="1" Grid.Row="2" x:Name="mail"  Placeholder="Correo" TextColor="Black"  PlaceholderColor="Gray" Keyboard="Email"/>
+        <Entry Grid.Column="2" Grid.Row="2" x:Name="direcc"  Placeholder="Direccion" TextColor="Black"  PlaceholderColor="Gray"/>
+
+        <Entry Grid.ColumnSpan="2" Grid.Row="3" x:Name="motivo"  Placeholder="Motivo" TextColor="Black"  PlaceholderColor="Gray"/>
+        <Entry Grid.Column="2" Grid.Row="3" x:Name="fecha"  Placeholder="01/01/2000" TextColor="Black"  PlaceholderColor="Gray" />
+
+        <Entry Grid.ColumnSpan="3" Grid.Row="4" x:Name="descrip"  Placeholder="Descripcion" TextColor="Black"  PlaceholderColor="Gray" />
+
+        <Button x:Name="btnContact" Text="Enviar" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="40" BackgroundColor="GreenYellow" />
+
+    </Grid>
+</ContentPage>

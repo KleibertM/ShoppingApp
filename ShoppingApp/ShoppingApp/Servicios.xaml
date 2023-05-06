@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Servicios"
+             Title="Servicios">
+    <Grid BackgroundColor="White" Padding="10,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width=".5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.ColumnSpan="2" Grid.Row="0" Source="https://www.grupociadetalentos.com/falabella/img/logos-grupo.jpg" />
+
+        <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal" >
+            <StackLayout Orientation="Vertical">
+                <Image Source="https://imagenes.elpais.com/resizer/nFG2xVqzfpKo448-tCn8XFYe05s=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/DARNPDRM5NJ2CKNRMCEYGRVJMA.jpg" HeightRequest="130" />
+                <Label Text="Sastreria" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Image Source="https://sotesa.com/wp-content/uploads/2017/01/43608476_m.jpg" HeightRequest="130" />
+                <Label Text="Servicio Tecnico" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Vertical"  Grid.ColumnSpan="2" Grid.Row="2" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <Label Text="Horario:" TextColor="Black" FontSize="18" VerticalTextAlignment="Center"/>
+                <Label Text="9:00 - 6:00 PM" TextColor="Black" FontSize="18" VerticalTextAlignment="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <Label Text="Frecuencia:" TextColor="Black" FontSize="18" VerticalTextAlignment="Center" />
+                <Label Text="Lunes - Viernes" TextColor="Black" FontSize="18" VerticalTextAlignment="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <Label Text="Telefono:" TextColor="Black" FontSize="18" VerticalTextAlignment="Center" />
+                <Label Text="01- 896 69 96" TextColor="Black" FontSize="18" VerticalTextAlignment="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="40">
+                <Label Text="Celular:" TextColor="Black" FontSize="18" VerticalTextAlignment="Center"/>
+                <Label Text="+51 698 963 987" TextColor="Black" FontSize="18" VerticalTextAlignment="End"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

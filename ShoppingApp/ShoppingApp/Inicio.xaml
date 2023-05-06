@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Inicio"
+             Title="Inicio">
+    
+    
+    <Grid Padding="10" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="190"/>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+            <ColumnDefinition Width=".33*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Image Grid.ColumnSpan="3" Grid.Row="0" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkACmtMuOzXtOizbDCzDKy8sJLHGO_3FyxsQ"/>
+
+        <ScrollView Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Row="1" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180" />
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".33*"/>
+                    <ColumnDefinition Width=".33*"/>
+                    <ColumnDefinition Width=".33*"/>
+                </Grid.ColumnDefinitions>
+
+
+
+                <Image Grid.Column="0" Grid.Row="0" Source="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/Falabella-feria-5-750x375.jpeg" />
+                <Button Grid.Column="0" Grid.Row="0" Text="Ropa" FontSize="20" Clicked="catRopa_Clicked"  HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="Center" />
+
+                <Image Grid.Column="1" Grid.Row="0" Source="https://www.lavanguardia.com/files/image_449_220/uploads/2022/05/25/628e0129c2b91.jpeg" />
+                <Button Grid.Column="1" Grid.Row="0" Text="Perfumes" FontSize="20" Clicked="catPerf_Clicked"  HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="Center" />
+
+                <Image Grid.Column="2" Grid.Row="0" Source="https://www.lavanguardia.com/files/article_main_microformat/uploads/2017/11/21/5fa3dda54689f.jpeg" />
+                <Button Grid.Column="2" Grid.Row="0" Text="Juguetes" FontSize="20" Clicked="catJug_Clicked" HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="Center" />
+               
+            </Grid>
+        </ScrollView>
+        <ScrollView Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Row="2" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="180" />
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".33*"/>
+                    <ColumnDefinition Width=".33*"/>
+                    <ColumnDefinition Width=".33*"/>
+                </Grid.ColumnDefinitions>
+
+
+
+                <Image Grid.Column="0" Grid.Row="0" Source="https://ar-media.hptiendaenlinea.com/magefan_blog/Factores_de_forma_de_la_computadora_Gu_a_de_compra.jpg" />
+                <Button Grid.Column="0" Grid.Row="0" Text="Computadoras" FontSize="20" Clicked="catComp_Clicked" HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="Center" />
+
+                <Image Grid.Column="1" Grid.Row="0" Source="https://elhabito.com.mx/wp-content/uploads/2022/04/Las-mejores-marcas-de-electrodomesticos-en-2022-925x540.jpg" />
+                <Button Grid.Column="1" Grid.Row="0" Text="Electro" FontSize="20" Clicked="catElec_Clicked" HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="Center" />
+
+                <Image Grid.Column="2" Grid.Row="0" Source="https://leidyoviedo.com/wp-content/uploads/2021/10/Proximamente.png" BackgroundColor="LightGray"/>
+                <Button Grid.Column="2" Grid.Row="0" Text="Pronto.." FontSize="20"  HorizontalOptions="Center" CornerRadius="50" TextColor="White" FontAttributes="Bold" BackgroundColor="Gray" Opacity=".8" VerticalOptions="End" />
+
+            </Grid>
+        </ScrollView>
+
+        <Image Grid.ColumnSpan="3" Grid.Row="3" Source="https://bolsadetrabajo.laborum.pe/saga/data1/images/slider_2.jpg" />
+
+        <StackLayout Grid.ColumnSpan="3" Grid.Row="4" Orientation="Horizontal" BackgroundColor="GreenYellow" >
+            <Image Source="https://popmenucloud.com/nkdwlziy/3d1ff84e-2772-4fa3-8aaf-908915790e5d.png"  HorizontalOptions="Start"/>
+            <Label Text="Derechos Reservados" FontSize="18"  HorizontalOptions="Center" TextColor="White" VerticalOptions="Center" />
+        </StackLayout>
+        <Label  Grid.ColumnSpan="3" Grid.Row="6" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"   />
+
+    </Grid>
+</ContentPage>

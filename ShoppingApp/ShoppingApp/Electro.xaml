@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Electro"
+             Title="ELectrodomesticos">
+    <ScrollView>
+        <Grid Padding="20" RowSpacing="5" ColumnSpacing="5" BackgroundColor="#D0D3D4 ">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <ScrollView Orientation="Horizontal" Grid.ColumnSpan="2" Grid.Row="0">
+                <Grid Grid.ColumnSpan="2" Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button TextColor="Black" Text="Ropa" x:Name="catRopa" Clicked="catRopa_Clicked" Grid.Column="0" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40" />
+                    <Button TextColor="Black" Text="Perfume" x:Name="catPerf" Clicked="catPerf_Clicked"  Grid.Column="1" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Juguetes" x:Name="catJug" Clicked="catJug_Clicked" Grid.Column="2" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Computo" x:Name="catComp" Clicked="catComp_Clicked"  Grid.Column="3" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Electro" x:Name="catElec" Clicked="catElec_Clicked" Grid.Column="4" Grid.Row="0" BackgroundColor="#E5E7E9"  CornerRadius="40"/>
+
+                </Grid>
+            </ScrollView>
+
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="1" Grid.Column="1" >
+                <StackLayout>
+                    <Image Source="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt6ccf67bbf83fa9a5/63179224d9aa2a4ef9cfb67b/FF-Ollas-multifuncion.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Olla Arrocera" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="OSTER"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/239.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/599.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="1" Grid.Column="0">
+                <StackLayout >
+                    <Image Source="https://http2.mlstatic.com/D_Q_NP_755894-MLA44631461178_012021-V.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Nevera 500L" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="MABE"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/549.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/1.199.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="2" Grid.Column="0" >
+                <StackLayout >
+                    <Image Source="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt6ccf67bbf83fa9a5/63179224d9aa2a4ef9cfb67b/FF-Ollas-multifuncion.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Olla Arrocera" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="OSTER"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/239.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/599.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="2" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://http2.mlstatic.com/D_Q_NP_755894-MLA44631461178_012021-V.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Nevera 500L" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="MABE"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/549.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/1.199.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="3" Grid.Column="0" >
+                <StackLayout >
+                    <Image Source="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt6ccf67bbf83fa9a5/63179224d9aa2a4ef9cfb67b/FF-Ollas-multifuncion.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Olla Arrocera" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="OSTER"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/239.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/599.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="3" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://http2.mlstatic.com/D_Q_NP_755894-MLA44631461178_012021-V.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Nevera 500L" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="MABE"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/549.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/1.199.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="4" Grid.Column="0" >
+                <StackLayout >
+                    <Image Source="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt6ccf67bbf83fa9a5/63179224d9aa2a4ef9cfb67b/FF-Ollas-multifuncion.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Olla Arrocera" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="OSTER"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/239.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/599.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="4" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://http2.mlstatic.com/D_Q_NP_755894-MLA44631461178_012021-V.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Nevera 500L" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="MABE"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/549.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/1.199.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="5" Grid.Column="0" >
+                <StackLayout >
+                    <Image Source="https://images.contentstack.io/v3/assets/bltf4ed0b9a176c126e/blt6ccf67bbf83fa9a5/63179224d9aa2a4ef9cfb67b/FF-Ollas-multifuncion.png" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Olla Arrocera" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="OSTER"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/239.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/599.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" Grid.Row="5" Grid.Column="1" >
+                <StackLayout >
+                    <Image Source="https://http2.mlstatic.com/D_Q_NP_755894-MLA44631461178_012021-V.jpg" Grid.Column="0" Grid.Row="0" Aspect="AspectFill" HeightRequest="150" />
+                    <Label TextColor="Black" Text="Nevera 500L" FontSize="18" FontAttributes="Bold"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="MABE"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="UNISEX"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Green" FontAttributes="Bold" Text="S/549.99"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Red" FontAttributes="Bold" Text="S/1.199.99" TextDecorations="Strikethrough" Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Retiro en Tienda"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Label TextColor="Black" Text="✔️Despacho a Casa"  Grid.Column="0" Grid.Row="0" VerticalOptions="End" HorizontalOptions="Center" />
+                    <Button Text="Comprar" BackgroundColor="#2ECC71" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>

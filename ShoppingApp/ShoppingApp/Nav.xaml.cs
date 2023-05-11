@@ -58,6 +58,12 @@ namespace ShoppingApp
             App.MasterDet.IsPresented = false;
             await App.MasterDet.Detail.Navigation.PushAsync(new Login());
         }
+
+        private async void btnRegis_Clicked(object sender, EventArgs e)
+        {
+            App.MasterDet.IsPresented = false;
+            await App.MasterDet.Detail.Navigation.PushAsync(new Registro());
+        }
     }
 
 

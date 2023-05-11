@@ -6,7 +6,7 @@
     <ScrollView>
         <Grid Padding="20" RowSpacing="5" ColumnSpacing="5" BackgroundColor="#D0D3D4 ">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
+                <RowDefinition Height="40" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -22,13 +22,13 @@
                     <ColumnDefinition Width="0.2*" />
                     <ColumnDefinition Width="0.2*" />
                     <ColumnDefinition Width="0.2*" />
-                </Grid.ColumnDefinitions>     
-                    
-                    <Button TextColor="Black" Text="Ropa" x:Name="catRopa" Clicked="catRopa_Clicked" Grid.Column="0" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40" />
-                    <Button TextColor="Black" Text="Perfume" x:Name="catPerf" Clicked="catPerf_Clicked"  Grid.Column="1" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
-                    <Button TextColor="Black" Text="Juguetes" x:Name="catJug" Clicked="catJug_Clicked" Grid.Column="2" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
-                    <Button TextColor="Black" Text="Computo" x:Name="catComp" Clicked="catComp_Clicked"  Grid.Column="3" Grid.Row="0" BackgroundColor="#E5E7E9" CornerRadius="40"/>
-                    <Button TextColor="Black" Text="Electro" x:Name="catElec" Clicked="catElec_Clicked" Grid.Column="4" Grid.Row="0" BackgroundColor="#E5E7E9"  CornerRadius="40"/>
+                </Grid.ColumnDefinitions>
+
+                    <Button TextColor="Black" Text="Ropa" x:Name="catRopa" Clicked="catRopa_Clicked" Grid.Column="0" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" />
+                    <Button TextColor="Black" Text="Perfume" x:Name="catPerf" Clicked="catPerf_Clicked"  Grid.Column="1" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Juguetes" x:Name="catJug" Clicked="catJug_Clicked" Grid.Column="2" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Computo" x:Name="catComp" Clicked="catComp_Clicked"  Grid.Column="3" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40"/>
+                    <Button TextColor="Black" Text="Electro" x:Name="catElec" Clicked="catElec_Clicked" Grid.Column="4" Grid.Row="0" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2"  CornerRadius="40"/>
         
                 </Grid>
             </ScrollView>

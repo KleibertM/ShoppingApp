@@ -23,6 +23,9 @@ namespace ShoppingApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            // Dentro del método FinishedLaunching
+            Xamarin.FormsGoogleMaps.Init("AIzaSyBv-1mo4TCn1fzqjgBLNebaehF4vHX6ZKY");
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

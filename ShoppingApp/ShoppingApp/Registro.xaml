@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingApp.Registro">
+    <Grid Padding="20" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width=".5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Column="0" Grid.Row="0" Source="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/bltaafae4331234b181/62f593f5145e5527a2b4972e/iconos-Falabella-evp.png" HorizontalOptions="Start"/>
+        <Label Grid.ColumnSpan="2" Grid.Row="0" Text="Falabella" FontSize="40" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Italic" TextColor="Black"/>
+ 
+        <Image Grid.ColumnSpan="2" Grid.Row="2" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkACmtMuOzXtOizbDCzDKy8sJLHGO_3FyxsQ"  />
+
+        <Label Grid.Column="0" Grid.Row="3"  Text="Nombre: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+        <Label Grid.Column="0" Grid.Row="4" Text="Edad: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="Black"/>
+        <Label Grid.Column="0" Grid.Row="5" Text="Correo electrónico: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="Black"/>
+        <Label Grid.Column="0" Grid.Row="6" Text="Clave: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="Black"/>
+        <Label Grid.Column="0" Grid.Row="7" Text="Teléfono: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="Black"/>
+        <Label Grid.Column="0" Grid.Row="8" Text="Dirección: " FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="Black"/>
+        <Entry Grid.Column="1" Grid.Row="3" x:Name="entryNombre" Placeholder="Ingrese Nombre" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" />
+        <Entry Grid.Column="1" Grid.Row="4" x:Name="entryEdad" Placeholder="Ingrese Edad" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" Keyboard="Numeric" />
+        <Entry Grid.Column="1" Grid.Row="5" x:Name="entryMail" Placeholder="Ingrese Correo Electrónico" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" Keyboard="Email" />
+        <Entry Grid.Column="1" Grid.Row="6" x:Name="entryClave" Placeholder="Ingrese Clave" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" IsPassword="True" />
+        <Entry Grid.Column="1" Grid.Row="7" x:Name="entryTelefono" Placeholder="Ingrese Teléfono" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" Keyboard="Telephone" />
+        <Entry Grid.Column="1" Grid.Row="8" x:Name="entryDireccion" Placeholder="Ingrese Dirección" VerticalOptions="Center" PlaceholderColor="Gray" TextColor="Black" />
+
+        <Button Grid.ColumnSpan="2" Grid.Row="9" x:Name="btnRegistro" Text="Registrarse" BackgroundColor="GreenYellow" TextColor="White" FontSize="20" FontAttributes="Bold" CornerRadius="60" Clicked="btnRegistro_Clicked"/>
+
+        <Label Grid.ColumnSpan="2" Grid.Row="10" Text="CREADOR: KLEIBERT MEDINA" FontSize="12" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"/>
+    </Grid>
+</ContentPage>

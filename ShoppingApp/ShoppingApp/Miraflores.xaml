@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="ShoppingApp.Miraflores"
              Title="Sede Miraflores">
     <Grid Padding="10,10,10,0" BackgroundColor="White">
@@ -18,15 +19,21 @@
             <ColumnDefinition Width=".33*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0" Text="Surco" x:Name="btnSur" Clicked="btnSur_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" />
-        <Button Grid.Row="0" Grid.Column="1" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" />
-        <Button Grid.Row="0" Grid.Column="2" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black"/>
+        <Button Grid.Row="0" Grid.Column="0" Text="Surco" x:Name="btnSur" Clicked="btnSur_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
+        <Button Grid.Row="0" Grid.Column="2" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black"/>
 
 
-        <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://photos.wikimapia.org/p/00/02/05/79/52_big.jpg" />
-        <Label Grid.Row="2" Grid.ColumnSpan="3" Text=" En el Distrito de Miraflores, Banco Falabella se encuentra en Av. José Pardo 130, Miraflores 15074,
-               el horario de atención es de Lunes A Viernes 10:00 A 18:00, Sábado 10:00 A 13:00, Domingo Cerrado y el teléfono de contacto es el 0116154300
-               " FontSize="16" TextColor="Black" />
+        <maps:Map x:Name="map" Grid.Row="1" Grid.ColumnSpan="3" />
+        <StackLayout Grid.Row="2" Grid.ColumnSpan="3" Padding="12">
+            <Label  Text="Saga Falabella se encuentra en Av. José Pardo 130, Miraflores 15074.
+               " FontSize="14" TextColor="Black" />
+            <Label  Text="Atención de Lunes A Viernes 10:00 A 18:00, Sábado 10:00 A 13:00, Domingo Cerrado.
+               " FontSize="14" TextColor="Black" />
+            <Label  Text="El teléfono de contacto es el 0116154300
+               " FontSize="14" TextColor="Black" />
+        </StackLayout>
+        
 
         <Label Grid.Row="3" Grid.ColumnSpan="3" Text="Sedes" FontSize="26" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" />
 

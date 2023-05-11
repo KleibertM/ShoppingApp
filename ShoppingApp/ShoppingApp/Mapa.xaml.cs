@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.GoogleMaps;
 using Xamarin.Forms.Xaml;
 
 namespace ShoppingApp
@@ -15,6 +16,8 @@ namespace ShoppingApp
         public Mapa()
         {
             InitializeComponent();
+
+            
         }
 
         private async void btnSur_Clicked(object sender, EventArgs e)

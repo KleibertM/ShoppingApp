@@ -13,7 +13,7 @@ namespace ShoppingApp
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new MainPage());
         }
         protected override void OnStart()
         {

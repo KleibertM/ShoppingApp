@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="ShoppingApp.Mapa">
     <Grid Padding="10,10,10,0" BackgroundColor="White">
         <Grid.RowDefinitions>
@@ -17,11 +18,12 @@
             <ColumnDefinition Width=".33*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Grid.Row="0" Grid.Column="0" Text="Surco" x:Name="btnSur" Clicked="btnSur_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" />
-        <Button Grid.Row="0" Grid.Column="1" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black" />
-        <Button Grid.Row="0" Grid.Column="2" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="#E5E7E9" CornerRadius="40" TextColor="Black"/>
+        <Button Grid.Row="0" Grid.Column="0" Text="Surco" x:Name="btnSur" Clicked="btnSur_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
+        <Button Grid.Row="0" Grid.Column="1" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
+        <Button Grid.Row="0" Grid.Column="2" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black"/>
 
         <Image Grid.Row="1" Grid.ColumnSpan="3" Source="https://tec.com.pe/wp-content/uploads/2013/11/Google-Maps-Trafico-Lima.jpg" />
+        <!--<maps:Map x:Name="map" Grid.Row="1" Grid.ColumnSpan="3" />-->
         <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Visítanos en nuestras sedes de Surco, Miraflores y Ate para disfrutar de una experiencia de compra única, variedad de productos y un excelente" FontSize="16" TextColor="Black" />
 
         <Label Grid.Row="3" Grid.ColumnSpan="3" Text="Sedes" FontSize="26" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" />

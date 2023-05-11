@@ -25,7 +25,7 @@
         <ScrollView Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Row="1" >
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="180" />
+                    <RowDefinition Height="190" />
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
@@ -51,7 +51,7 @@
         <ScrollView Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Row="2" >
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="180" />
+                    <RowDefinition Height="190" />
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>

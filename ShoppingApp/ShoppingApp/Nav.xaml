@@ -44,6 +44,10 @@
                         BackgroundColor="Transparent" Clicked="btnMap_Clicked" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Margin="10">
+                    <ImageButton Source="https://cdn-icons-png.flaticon.com/512/1698/1698572.png" HeightRequest="40"  BackgroundColor="Transparent" Clicked="btnRegis_Clicked" />
+                    <Button Text="Registrarme" x:Name="btnRegis"  BackgroundColor="Transparent" Clicked="btnRegis_Clicked"  />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10">
                     <ImageButton Source="https://cdn-icons-png.flaticon.com/512/4318/4318565.png" HeightRequest="40"  BackgroundColor="Transparent" Clicked="btnCerrar_Clicked" />
                     <Button Text="Cerrar Seccion" x:Name="btnCerrar"  BackgroundColor="Transparent" Clicked="btnCerrar_Clicked"  />
                 </StackLayout>

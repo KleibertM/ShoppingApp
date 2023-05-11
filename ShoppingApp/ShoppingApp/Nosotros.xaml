@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="ShoppingApp.Nosotros"
              Title="Nosotros">
     <Grid Padding="10,10,10,0" BackgroundColor="White">
@@ -28,14 +29,17 @@
 
         <Label Grid.Row="3" Grid.ColumnSpan="3" Text="locales" FontSize="26" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextTransform="Uppercase" TextColor="Black" />
 
-        <ImageButton Grid.Column="0" Grid.Row="4" Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/>
-        <Label Grid.Column="0" Grid.Row="5" Text="Surco" FontSize="18"  HorizontalOptions="Center" TextColor="Black"/>
+        <!-- <ImageButton Grid.Column="0" Grid.Row="4" Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/> -->
+        <maps:Map x:Name="map" Grid.Column="0" Grid.Row="4" />
+        
+        <Button Grid.Column="1" Grid.Row="5" Text="Ate" x:Name="btnAte" Clicked="btnAte_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
 
-        <ImageButton Grid.Column="1" Grid.Row="4" Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/>
-        <Label Grid.Column="1" Grid.Row="5" Text="Ate" FontSize="18"  HorizontalOptions="Center" TextColor="Black"/>
-
-        <ImageButton Grid.Column="2" Grid.Row="4" Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/>
-        <Label Grid.Column="2" Grid.Row="5" Text="Miraflores" FontSize="18"  HorizontalOptions="Center" TextColor="Black"/>
-
+        <!-- <ImageButton Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/> -->
+        <maps:Map x:Name="mapS" Grid.Column="1" Grid.Row="4" />
+        <Button Grid.Column="0" Grid.Row="5" Text="Surco" x:Name="btnSur" Clicked="btnSur_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black" />
+       
+        <!-- <ImageButton Grid.Column="2" Grid.Row="4" Source="https://cdn-icons-png.flaticon.com/512/190/190138.png" BackgroundColor="Transparent"/> -->
+        <maps:Map x:Name="mapM" Grid.Row="4" Grid.Column="2" />
+        <Button Grid.Column="2" Grid.Row="5" Text="Miraflores" x:Name="btnMirf" Clicked="btnMirf_Clicked" BackgroundColor="Transparent" BorderColor="#F2F3F4" BorderWidth="2" CornerRadius="40" TextColor="Black"/>
     </Grid>
 </ContentPage>
